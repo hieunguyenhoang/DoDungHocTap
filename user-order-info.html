@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/LOGO.webp">
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,  initial-scale=0.9,maximum-scale=1">
+    <title>Chi Tiết Đơn Hàng</title>
+</head>
+<body style="background-color:#fef5f5;">
+  
+    <div class="container-fluid">
+
+        <div class="container">
+          <!-- Title -->
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <h2 class="h5 mb-0" style="font-size: 36px;"><a href="#" class="text-muted"></a>Chi Tiết Đơn Hàng</h2>
+            <img src="assets/img/LOGO.webp" id="h2o-logo" width="12%">
+          </div>
+        
+          <!-- Main content -->
+          <div class="row">
+            <div class="col-lg-8">
+              <!-- Details -->
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="mb-3 d-flex justify-content-between">
+                    <div>
+                      <span class="me-3">Ngày dự kiến nhận - </span>
+                      <span class="me-3">30/2/2023</span>
+                     
+                    </div>
+                
+                  </div>
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex mb-2">
+                            <div class="flex-shrink-0">
+                              <img src="assets/img/bút bi.jpeg" alt="" width="50" class="img-fluid">
+                            </div>
+                            <div class="flex-lg-grow-1 ms-3 ml-3">
+                              <h6 class="small mb-0"><a href="#" class="text-reset">Bút bi đa sắc màu</a></h6>
+                              <span class="small">22.500vnđ</span>
+                            
+                            </div>
+                          </div>
+                        </td>
+                        <td>x1</td>
+                        <td class="text-end">22.500vnđ</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex mb-2">
+                            <div class="flex-shrink-0">
+                              <img src="assets/img/bán chạy 2.jpeg" alt="" width="50" class="img-fluid">
+                            </div>
+                            <div class="flex-lg-grow-1 ms-3 ml-3">
+                              <h6 class="small mb-0"><a href="#" class="text-reset">Pepsi Original</a></h6>
+                              <span class="small">12.000vnđ</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>x3</td>
+                        <td class="text-end">36.000vnđ</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="2">Tổng cộng:</td>
+                        <td class="text-end">58.500vnđ</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Phí vận chuyển:</td>
+                        <td class="text-end">8.000vnđ</td>
+                      </tr>
+                  
+                      <tr class="fw-bold">
+                        <td colspan="2" style="font-size: 20px; font-weight: 600;">Tổng phí:</td>
+                        <td class="text-end" style="font-size: 20px; font-weight: 600;">66.500vnvđ</td>
+                      </tr>
+                      <tr>
+                        <td>
+                           <button id="submit-order-admin" style="background-color: #ff8299;">Xác Nhận</button>
+                        <button id="back-to-admin-order" onclick="window.location.href='admin-order.html'" style="background-color: #333;">Hủy</button> 
+                        </td>
+                        
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+              <!-- Payment -->
+             
+            </div>
+            <div class="col-lg-4">
+              <!-- Customer Notes -->
+            
+              <div class="card mb-4">
+                <!-- Shipping information -->
+                <div class="card-body" style="height: 491px;">
+                  <h3 class="h6 mb-4" style="font-size: 20px;">Thông tin người đặt hàng </h3>
+                  <hr>
+                  <h3 class="h6 mb-4">Tên: <span style="font-weight: 400;">Nguyễn Hoàng Hiếu</span></h3>
+                  <h3 class="h6 mb-4">Email: <span style="font-weight: 400;">nguyenhoanghieu@gmail.com</span></h3>
+                  <h3 class="h6 mb-4">Số Điện Thoại: <span style="font-weight: 400;">+84385983746</span></h3>
+                  <h3 class="h6 mb-4">Phương Thức Thanh Toán: <span style="font-weight: 400;">Tiền mặt</span></h3>
+                  <h3 class="h6 mb-4">Ngày đặt hàng: <span style="font-weight: 400;">27-2-2023</span></h3>
+                  <h3 class="h6 mb-4">Ngày dự kiến nhận hàng: <span style="font-weight: 400;">30-2-2023</span></h3>
+                  <h3 class="h6 mb-4">Địa chỉ nhà: <span style="font-weight: 400;">Gò Vấp, TP.HCM</span> </h3>
+                 
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+</body>
+</html>
+
+<style>
+    body{
+    background:#eee;
+}
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+hr{
+    background-color: black;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+}
+.text-reset {
+    --bs-text-opacity: 1;
+    color: inherit!important;
+}
+a {
+    color: #5465ff;
+    text-decoration: none;
+}
+#submit-order-admin{
+    background: #256eff;
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.4rem 1.8rem;
+    outline: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color:white;
+    }
+    #back-to-admin-order{
+    background: #F7595B;
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.4rem 1.8rem;
+    outline: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color:white;
+    }
+    @media(width <= 768px){
+      #h2o-logo{
+        width: 26%;
+      }
+
+    }
+</style>

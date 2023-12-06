@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,  initial-scale=1,maximum-scale=1" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+ <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="icon" type="image/png" href="assets/img/LOGO.webp">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color:#fef5f5; margin-top: -500px;">
+  <section id="header" style="background:#fef5f5;">
+    <a href="index-user.html">
+  <img src="assets/img/LOGO.webp" class="logo" alt="" >
+   </a>
+  <div>
+   <ul id="icons">
+    
+  <li id="menu"><a href="index-user.html" class="choose" ><span style="color: #ff8299;">Trang chủ</span></a></li>
+          <li id="menu"><a href="brand-user.html" class="choose"><span style="color: #ff8299;">Thương Hiệu</span></a></li>
+         
+          <li id="menu" class="dropdown__item"  class="choose">                      
+            <a  class="act-on" class="choose"><span  class="act-on" style="color: #ff8299;">Cửa Hàng</span></a>
+         
+  
+            <div class="dropdown__container" style="background-color: #fef5f5;">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <!-- brand1 -->
+                    <div class="dropdown__icon">
+                     <img src="./assets/img/brand1.svg">
+                    </div>
+                </div>
+                    <!-- brand2 -->
+                <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <img src="./assets/img/brand2.svg">
+                    </div>
+                </div>
+                    <!-- brand3 -->
+                <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                      <img src="./assets/img/brand3.svg">
+                    </div>
+                </div>
+                    <!-- brand4 -->
+                <div class="dropdown__group">
+                    <div class="dropdown__icon">
+                       <img src="./assets/img/brand4.png">
+                    </div>
+                </div>
+                <!-- brand5 -->
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                     <img src="./assets/img/brand5.jpg">
+                  </div> 
+              </div>
+                <!-- brand6 -->
+              <div class="dropdown__group">
+                <div class="dropdown__icon">
+                   <img src="./assets/img/brand66.jpg">
+                </div>  
+            </div>
+                </div>
+            </div>
+          </li>
+          <li id="menu"><a href="contact-user.html" class="choose"><span style="color: #ff8299;">Liên Hệ</span></a></li>
+    
+      <div class="group" id="search">
+      <input id="search-item" type="text" placeholder="bút, tập, giấy note..." name="text" class="input" onkeyup="search()" onkeyup="searchgia()">
+    <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+      <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+  </svg>
+  </div> 
+      <li id="menu" ><a id="cart-icon" style="color: #ff8299;" href="./register.html">  <div class="cart-follow-icon">
+<a href="./register.html">      
+    <i class="fa-solid fa-cart-shopping add-cart" style="color: #ff8299;"></i>
+</a>      </div></a>
+      </li>
+      <li id="menu" id="lg-bag"> <a onclick="toggleMenu()" id="userlogin" href="/DoDungHocTap/login.html"><i class="fa-solid fa-circle-user" style="color: #ff8299;"></i></a>
+      </li>
+   
+      <a  id="close"><i class="fa-solid fa-x"></i></a>
+   </ul>
+  </div>
+
+  <!-- profile -->
+  <div class="sub-menu-wrap" id="subMenu">
+    <!-- <div class="sub-menu" style="background-color: #fef5f5;">
+  <div class="user-info">
+  <img src="assets/images/pic/custome1.png">
+  <h2>Hiếu Hoàng</h2>
+  </div>
+  <hr>
+  <a href="user.html" class="sub-menu-index-link">
+    <img src="assets/images/pic/profile.png">
+    <p>Chỉnh sửa hồ sơ</p>
+  </a>
+  <a href="login.html" class="sub-menu-index-link">
+    <img src="assets/images/pic/logout.png" style="">
+    <p>Đăng xuất</p>
+  </a> -->
+  
+    </div>
+  </div>
+  <div id="mobile"> 
+  
+    <a id="cart-icon1">
+      <div class="cart-follow-icon">
+        <i class="fa-solid fa-cart-shopping add-cart"></i>
+      </div>
+    </a>
+    <a href="./register.html" onclick="toggleMenu()" id="userlogin" ><i class="fa-solid fa-circle-user"></i></a>
+    
+ 
+  
+  <i id="bar" class="fa-solid fa-bars" style="color: #000000;"></i>
+  
+  </div>
+
+  
+
+   </section>
+
+
+   
+
+   <section id="b-banner1">
+    
+    <div class="b-box1">
+     
+    </div>
+    <div class="b-box1">
+      
+    </div>
+    <div class="b-box1">
+     
+    </div>
+
+   </section> 
+  
+  
+ <section id="product11" class="section-p11" class="shop container">
+  <h2 style="color: #ff8299; font-style: italic; margin-bottom: 20px;">Những Sản Phẩm Nổi Bật</h2> 
+
+  <ul class="dssp">
+    <a href="./but.html">
+      <li>Bút</li>
+    </a>
+    <a href="./tap.html">
+      <li>Tập</li>
+    </a>
+    <a href="./colokit.html">
+      <li>Giấy note</li>
+    </a>
+
+    <a href="#!">
+      <li>Thước kẻ</li>
+    </a>
+    <a href="./shop-user.html">
+      <li>Những sản phẩm khác</li>
+    </a>
+  </ul>
+
+  <div  id="filter-buttons">
+       
+    <button class="btn on" id="backnormal" onclick="filterObjects('all')">Từ 0 -> 20.000vnđ</button>
+    <button class="btn" id="btnfil" id="back1" onclick="filterObjects('bestseller')">Từ 20.000vnđ -> 50.000vnđ</button>
+    <button class="btn" id="btnfil" id="back2" onclick="filterObjects('new')">Từ 50.000vnđ -> 100.000vnđ</button>
+    <button class="btn" id="btnfil" id="back3" onclick="filterObjects('special')">Trên 100.000vnđ</button>
+
+</div>
+
+<div class="search-container">
+ 
+
+</div>
+
+ <div class="cartegory" style="display: none;">
+  
+ <div class="filter-sort">
+ 
+  <select name="" id="filterselect">
+
+    <option value="Default">Filter</option>
+  <option value="LowToHigh">PRICE (LOW - HIGH)</option>
+  <option value="HighToLow">PRICE (HIGH - LOW)</option>
+
+  </select>
+ </div>
+</div>
+
+<div class="pro-container1" id="product-list" >
+
+<div class="pro1 bestseller" class="product-box" >
+  <a href="product20-user.html">
+  <img  src="assets/img/spnb1.jpg" class="product-img" alt=""></a>
+
+      
+    <h5 class="product-title">Bút lông kim Điểm 10 </h5>
+    <h4 class="product-price">9.000vnđ</h4>
+     
+    <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+    
+
+  <div id="buttonshop">
+    <button onclick="window.location.href='product20-user.html'">Chi tiết sản phẩm</button>
+  </div>
+  </div> 
+
+  <div class="pro1 new" class="product-box">
+    <a href="product21-user.html">
+    <img class="product-img" src="assets/img/spnb2.jpg" alt=""></a>
+   
+      <h5 class="product-title">Combo 20 Bút dạ quang </h5>
+     <h4 class="product-price">220.000vnđ</h4>
+        
+      <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+    
+
+    <div id="buttonshop">
+      <button onclick="window.location.href='product21-user.html'">Chi tiết sản phẩm</button>
+    </div>
+    </div> 
+
+    <div class="pro1 bestseller" class="product-box">
+      <a href="product22-user.html">
+      <img class="product-img" src="assets/img/spnb3.webp" alt=""></a>
+     
+        <h5 class="product-title">Bút lông bảng Thiên Long</h5>
+        <h4 class="product-price">11.000vnđ</h4>
+        <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+      <div id="buttonshop">
+        <button onclick="window.location.href='product22-user.html'">Chi tiết sản phẩm</button>
+      </div>
+      </div> 
+
+
+    <div class="pro1 bestseller" class="product-box">
+      <a href="product23-user.html">
+      <img class="product-img" src="assets/img/spnb4.jpg" alt=""></a>
+
+        <h5 class="product-title">Thước thẳng Thiên Long</h5>
+        <h4 class="product-price">7.000vnđ</h4>
+        <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+ 
+      <div id="buttonshop">
+        <button onclick="window.location.href='product23-user.html'">Chi tiết sản phẩm</button>
+      </div>
+      </div> 
+     
+        <div class="pro1 special" class="product-box">
+          <a href="product24-user.html">
+          <img class="product-img" src="assets/img/spnb5.jpg" alt=""></a>
+       
+            <h5 class="product-title">Compa Thiên Long C-018</h5>
+            <h4 class="product-price">23.000vnđ</h4>
+            <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+          <div id="buttonshop">
+            <button onclick="window.location.href='product24-user.html'">Chi tiết sản phẩm</button>
+          </div>
+          </div> 
+
+            <div class="pro1 special" class="product-box">
+              <a href="#!">
+              <img class="product-img" src="assets/img/sản phẩm 6.jpg" alt=""></a>
+           
+                <h5 class="product-title">Bút dạ quang</h5>
+                <h4 class="product-price">9.000vnđ</h4>
+                <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+              <div id="buttonshop">
+                <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+              </div>
+              </div> 
+
+                <div class="pro1 new" class="product-box">
+                  <a href="#!">
+                  <img class="product-img" src="assets/img/sản phẩm 7.jpg" alt=""></a>
+               
+                    <h5 class="product-title">Thước kẻ nhôm </h5>
+                    <h4 class="product-price">7.000vnđ</h4>
+                    <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                  <div id="buttonshop">
+                    <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                  </div>
+                  </div> 
+
+                  <div class="pro1 new" class="product-box">
+                    <a href="#!">
+                    <img class="product-img" src="assets/img/sản phẩm 8.jpg" alt=""></a>
+                   
+                      <h5 class="product-title">Bút chì bấm</h5>
+                      <h4 class="product-price">18.000vnđ</h4>
+                      <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                    <div id="buttonshop">
+                      <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                    </div>
+                    </div> 
+
+                    <div class="pro1 special" class="product-box">
+                      <a href="#!">
+                      <img class="product-img" src="assets/img/sản phẩm 9.jpg" alt=""></a>
+                   
+                        <h5 class="product-title">Bút chì A4</h5>
+                        <h4 class="product-price">8.000vnđ</h4>
+                        <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                      <div id="buttonshop">
+                        <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                      </div>
+                      </div> 
+
+                      <div class="pro1" class="product-box">
+                        <a href="#!">
+                        <img class="product-img" src="assets/img/sản phẩm 10.jpg" alt=""></a>
+                      
+                          <h5 class="product-title">Tập học sinh 4 ô ly</h5>
+                          <h4 class="product-price">10.400vnđ</h4>
+                          <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                        <div id="buttonshop">
+                          <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                        </div>
+                        </div> 
+
+                        <div class="pro1 new" class="product-box">
+                          <a href="#!">
+                          <img class="product-img" src="assets/img/sản phẩm 11.jpg" alt=""></a>
+                       
+                            <h5 class="product-title">Tập học sinh 0 ô ly</h5>
+                            <h4 class="product-price">7.000vnđ</h4>
+                            <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                          <div id="buttonshop">
+                            <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                          </div>
+                          </div> 
+
+                          <div class="pro1" class="product-box">
+                            <a href="#!">
+                            <img class="product-img" src="assets/img/sản phẩm 12.jpg" alt=""></a>
+                         
+                              <h5 class="product-title">Kéo văn phòng</h5>
+                              <h4 class="product-price">31.000vnđ</h4>
+                              <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                            <div id="buttonshop">
+                              <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                            </div>
+                            </div> 
+
+                            <div class="pro1" class="product-box">
+                              <a href="#!">
+                              <img class="product-img" src="assets/img/sản phẩm 14.jpg" alt=""></a>
+                           
+                                <h5 class="product-title">Gôm thiên long</h5>
+                                <h4 class="product-price">5.900vnđ</h4>
+                                <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                              <div id="buttonshop">
+                                <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                              </div>
+                              </div> 
+  
+                              <div class="pro1" class="product-box">
+                                <a href="#!">
+                                <img class="product-img" src="assets/img/bán chạy 2.jpeg" alt=""></a>
+                             
+                                  <h5 class="product-title">Tập No Bad Day</h5>
+                                  <h4 class="product-price">12.000vnđ</h4>
+                                  <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                <div id="buttonshop">
+                                  <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                </div>
+                                </div> 
+       
+                                <div class="pro1" class="product-box">
+                                  <a href="#!">
+                                  <img class="product-img" src="assets/img/sản phẩm 15.jpeg" alt=""></a>
+                                
+                                    <h5 class="product-title">Giấy Note sắc màu</h5>
+                                    <h4 class="product-price">22.000vnđ</h4>
+                                    <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                              
+                                  <div id="buttonshop">
+                                    <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                  </div>
+                                  </div> 
+
+                                  <div class="pro1" class="product-box">
+                                    <a href="#!">
+                                    <img class="product-img" src="assets/img/sản phẩm 16.jpeg" alt=""></a>
+                                  
+                                      <h5 class="product-title">Thước kẻ hoạt họa</h5>
+                                      <h4 class="product-price">9.900vnđ</h4>
+                                      <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                    <div id="buttonshop">
+                                      <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                    </div>
+                                    </div> 
+                                    <div class="pro1" class="product-box">
+                                      <a href="#!">
+                                      <img class="product-img" src="assets/img/sản phẩm 17.jpeg" alt=""></a>
+                                   
+                                        <h5 class="product-title">Bìa kẹp giấy</h5>
+                                        <h4 class="product-price">30.000vnđ</h4>
+                                        <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                      <div id="buttonshop">
+                                        <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                      </div>
+                                      </div> 
+                                    
+                                      <div class="pro1" class="product-box">
+                                        <a href="#!">
+                                        <img class="product-img" src="assets/img/sản phẩm 18.jpg" alt=""></a>
+                                      
+                                          <h5 class="product-title">Phấn trắng không bụi</h5>
+                                          <h4 class="product-price">15.500vnđ</h4>
+                                          <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                        <div id="buttonshop">
+                                          <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                        </div>
+                                        </div> 
+                                    
+                                        <div class="pro1" class="product-box">
+                                          <a href="#!">
+                                          <img class="product-img" src="assets/img/sản phẩm 19.jpg" alt=""></a>
+                                         
+                                            <h5 class="product-title">Ghim bấm loại nhỏ</h5>
+                                            <h4 class="product-price">12.000vnđ</h4>
+                                            <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                          <div id="buttonshop">
+                                            <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                          </div>
+                                          </div> 
+                                    
+                                    
+                                        <div class="pro1" class="product-box">
+                                          <a href="#!">
+                                          <img class="product-img" src="assets/img/sản phẩm 20.jpg" alt=""></a>
+                                        
+                                            <h5 class="product-title">Ngòi bút bi xanh đỏ</h5>
+                                            <h4 class="product-price">29.300vnđ</h4>
+                                            <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                          <div id="buttonshop">
+                                            <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                          </div>
+                                          </div> 
+                                         
+                                          <div class="pro1" class="product-box">
+                                            <a href="#!">
+                                            <img class="product-img" src="assets/img/sản phẩm 21.jpg" alt=""></a>
+                                            
+                                              <h5 class="product-title">Dây thun buộc</h5>
+                                              <h4 class="product-price">5.000vnđ</h4>
+                                              <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                            <div id="buttonshop">
+                                              <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                            </div>
+                                            </div> 
+
+                                            <div class="pro1" class="product-box">
+                                              <a href="#!">
+                                              <img class="product-img" src="assets/img/sản phẩm 22.jpeg" alt=""></a>
+                                            
+                                                <h5 class="product-title">Bộ bút gấu panda</h5>
+                                                <h4 class="product-price">45.600vnđ</h4>
+                                                <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                              <div id="buttonshop">
+                                                <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                              </div>
+                                              </div> 
+
+                                              <div class="pro1" class="product-box">
+                                                <a href="#!">
+                                                <img class="product-img" src="assets/img/sản phẩm 23.jpeg" alt=""></a>
+                                               
+                                                  <h5 class="product-title">Set bút 5 cây</h5>
+                                                  <h4 class="product-price">37.000cnđ</h4>
+                                                  <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                                <div id="buttonshop">
+                                                  <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                                </div>
+                                                </div> 
+
+                                                <div class="pro1" class="product-box">
+                                                  <a href="#!">
+                                                  <img class="product-img" src="assets/img/sản phẩm 24.jpg" alt=""></a>
+                                                
+                                                    <h5 class="product-title">Bút kéo dây </h5>
+                                                    <h4 class="product-price">24.700vnđ</h4>
+                                                    <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                                  <div id="buttonshop">
+                                                    <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                                  </div>
+                                                  </div> 
+
+                                                  <div class="pro1 special" class="product-box">
+                                                    <a href="#!">
+                                                    <img class="product-img" src="assets/img/dao rọc giấy.jpeg" alt=""></a>
+                                                
+                                                      <h5 class="product-title">Dao rọc giấy</h5>
+                                                      <h4 class="product-price">22.000vnđ</h4>
+                                                      <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                                    <div id="buttonshop">
+                                                      <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                                    </div>
+                                                    </div> 
+                                                  <div class="pro1 special" class="product-box">
+                                                      <a href="#!">
+                                                      <img class="product-img" src="assets/img/bút bi.jpeg" alt=""></a>
+                                                  
+                                                        <h5 class="product-title">Bút bi đa ngòi</h5>
+                                                        <h4 class="product-price">24.200vnđ</h4>
+                                                        <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                                      <div id="buttonshop">
+                                                        <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                                      </div>
+                                                      </div> 
+
+                                                      <div class="pro1 special" class="product-box">
+                                                        <a href="#!">
+                                                        <img class="product-img" src="assets/img/bán chạy 3.jpeg" alt=""></a>
+                                                    
+                                                          <h5 class="product-title">Giấy note hình mèo</h5>
+                                                          <h4 class="product-price">6.000vnđ</h4>
+                                                          <i id="cart-plus" class='bx bx-cart-add add-cart'></i>
+                                                        <div id="buttonshop">
+                                                          <button onclick="window.location.href='#!'">Chi tiết sản phẩm</button>
+                                                        </div>
+                                                        </div> 
+
+                                                   
+</div>
+
+<div id="containerpage">
+  <div class="pages">
+
+<ul class="listPage">
+  <li class="activi"></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+  </div>
+</div>
+</section>
+
+ <!--------- Footer --------->
+
+ <footer style="background:#fef5f5;">
+  <div id="all-footer">
+  <div id="fo-text">
+    <div class="alldrinklogo">
+  <img src="">
+  
+    </div>
+    <div id="long1">
+      <div id="seprator1">
+        <hr class="ruler1">
+      </div>
+    </div>
+  
+    <div id="col">
+      <h2>
+        TRỢ GIÚP
+      </h2>
+      <ul>
+        <li><a href="" target="_blank">Giới thiệu</a></li>
+        <li><a href="" target="_blank">Chính sách đổi trả hàng</a></li>
+        <li><a href="" target="_blank">Qui định thanh toán và vận chuyển</a></li>
+        <li><a href="" target="_blank">Chính sách bảo mật thông tin khách hàng</a></li>
+      </ul>
+    </div>
+  
+      <div id="col">
+        <h2>
+          THÔNG TIN LIÊN HỆ
+        </h2>
+        <ul>
+          <li><a href="" target="_blank">HotLine: 1900 882 982</a></li>
+          <li><a href="" target="_blank">Email: nguyenhoanghieu@gmail.com</a></li>
+          <li><a href="" target="_blank">Fanpage: DoDungHocTap</a></li>
+          
+        </ul>
+      </div>
+  
+    
+  
+      <div id="col">
+        <h2>
+          CỬA HÀNG ĐỒ DÙNG HỌC TẬP
+        </h2>
+        <ul>
+          <li><a href="" target="_blank">250 Kim Ngưu, Q. Hai Bà Trưng, Hà Nội</a></li>
+          <li><a href="" target="_blank">58 Chùa Láng, Q. Đống Đa, Hà Nội</a></li>
+          <li><a href="" target="_blank">500 Lê Văn Sỹ, p.14, Quận 3, TP.HCM</a></li>
+         
+        </ul>
+      </div>
+      <div id="col">
+     
+        <ul>
+          <li><a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #ff8299;"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa-brands fa-instagram" style="color: #ff8299;"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa-brands fa-twitter" style="color: #ff8299;"></i></a></li>
+          <li><a href="" target="_blank"><i class="fa-brands fa-youtube" style="color: #ff8299;"></i></a></li>
+        </ul>
+        <a href=""><img src="./assets/img/BoCongThuong.webp" alt="" style="width: 300px; height: 130px;"></a>
+    </div>
+  
+      
+      <div id="long">
+        <div id="seprator">
+          <hr class="ruler">
+        </div>
+      </div>
+  
+     <div class="copyright">
+      <p>- 2020 - Củng Cố Ước Mơ Việt.</p>
+      </div>
+  
+  </div>
+     
+     </footer>
+
+
+ <script>
+  const bar = document.getElementById('bar');
+  const icon = document.getElementById('icons');
+ 
+  if(bar){
+    bar.addEventListener('click',() =>{
+  icon.classList.add('active');
+    })}
+   
+  
+  
+   </script>
+
+<script>
+   
+const icons = document.getElementById("icons");
+const dong = document.getElementById("close");
+const barmenu = document.getElementById('bar');
+dong.addEventListener("click", function() {
+ 
+  icons.style.right = "-300px";
+});
+barmenu.addEventListener("click", function() {
+  icons.style.right = "0px";
+});
+window.addEventListener("resize", function() {
+
+if (window.innerWidth >= 1138) {
+  icons.classList.remove('active');
+}
+else{
+    icons.style.right="-300px";
+   }
+}
+);
+</script>
+
+<script>
+ 
+//Phan trang//
+  let thisPage=1;
+  let limit= 12;
+
+  let list = document.querySelectorAll('.pro-container1 .pro1');
+  function loadItem(){
+  
+    let beginGet= limit * (thisPage -1);
+    let endGet = limit * thisPage-1;
+    list.forEach((item, key)=>{
+if(key >= beginGet && key <= endGet){
+  item.classList.remove('mat');
+
+}else{
+  item.classList.add('mat');
+}
+    })
+    listPage();
+  }
+  loadItem();
+
+  function listPage(){
+   let count = Math.ceil(list.length/limit); 
+   document.querySelector('.listPage').innerHTML ='';
+   
+   if(thisPage != 1) {
+      let prev = document.createElement('li');
+      prev.innerHTML = '<i class="fa fa-chevron-left"></i>'; // Thay thế bằng biểu tượng
+      prev.setAttribute('onclick', "changePage(" + (thisPage -1)+ ")");
+      document.querySelector('.listPage').appendChild(prev);
+   }
+
+   for(i=1;i<= count;i++){
+      let newPage = document.createElement('li');
+      newPage.innerHTML = i;
+      if(i == thisPage){
+         newPage.classList.add('activi');
+      }
+      newPage.setAttribute('onclick', "changePage("+ i +")");
+      document.querySelector('.listPage').appendChild(newPage);
+   } 
+
+   if(thisPage!= count){
+      let next = document.createElement('li');
+      next.innerHTML = '<i class="fa fa-chevron-right"></i>'; // Thay thế bằng biểu tượng
+      next.setAttribute('onclick', "changePage(" + (thisPage+1)+")");
+      document.querySelector('.listPage').appendChild(next);
+   }
+} 
+
+  function changePage(i){
+thisPage=i;
+loadItem();
+  }
+
+ 
+  const search = () => {
+  
+  const searchbox = document.getElementById("search-item").value.toUpperCase();
+  const storeitems = document.getElementById("product-list");
+  const product = document.querySelectorAll(".pro1");
+  const pname = document.getElementsByTagName("h5");
+  //const ptype = document.getElementsByTagName("h2");
+  const pprice = document.getElementsByTagName("h4");
+
+  // Split the search term into multiple words.
+  const searchTerms = searchbox.split(" ");
+
+  // Loop through each product element.
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].getElementsByTagName("h5")[0];
+    //let matchType = product[i].getElementsByTagName("h2")[0];
+    let matchPrice = product[i].getElementsByTagName("h4")[0];
+
+    // Check if the product name, type, and price match any of the search terms.
+    let matches = 0;
+    for (const searchTerm of searchTerms) {
+      if (
+        match.textContent.toUpperCase().indexOf(searchTerm) > -1 ||
+        //matchType.textContent.toUpperCase().indexOf(searchTerm) > -1 ||
+        matchPrice.textContent.toUpperCase().indexOf(searchTerm) > -1
+      ) {
+        matches++;
+      }
+    }
+
+    // If all of the search terms match, display the product element. Otherwise, hide it.
+    if (matches === searchTerms.length) {
+      product[i].style.display = "";
+      limit=12;
+    thisPage=1;
+        loadItem();
+    } else {
+      product[i].style.display = "none";
+      limit=25;
+    thisPage=1;
+        loadItem();
+    }
+
+}
+};
+
+ 
+let filterSelect = document.getElementById('filterselect');
+
+// Add event listener to the select element
+filterSelect.addEventListener('change', function() {
+  let sortValue = this.value;
+  let productList = document.querySelectorAll('.pro-container1 .pro1');
+  let sortedList;
+
+  // Sort the product list based on the selected value
+  if (sortValue === 'LowToHigh' || sortValue === 'HighToLow') {
+    limit = 25;
+thisPage=1;
+    sortedList = Array.from(productList).sort((a, b) => {
+      let priceA = parseFloat(a.querySelector('.product-price').innerText.replace('$', ''));
+      let priceB = parseFloat(b.querySelector('.product-price').innerText.replace('$', ''));
+      return sortValue === 'LowToHigh' ? priceA - priceB : priceB - priceA;
+    });
+  } else {
+    limit = 12;
+
+    sortedList = productList;
+  }
+
+  // Remove the existing products from the container
+  let proContainer = document.querySelector('.pro-container1');
+  while (proContainer.firstChild) {
+    proContainer.removeChild(proContainer.firstChild);
+  }
+
+  // Add the sorted products back to the container
+  sortedList.forEach(product => {
+    proContainer.appendChild(product);
+  });
+
+  // Reload the items with the updated limit
+  loadItem();
+});
+
+</script>
+
+<script>
+  const cartIcon=document.querySelector("#cart-icon");
+const cart=document.querySelector(".cart");
+const closeCart=document.querySelector("#cart-close");
+const cartIcon1=document.querySelector("#cart-icon1");
+
+cartIcon.addEventListener('click',()=>{
+  cart.classList.add("act");
+});
+cartIcon1.addEventListener('click',()=>{
+  cart.classList.add("act");
+});
+closeCart.addEventListener('click',()=>{
+  cart.classList.remove("act");
+});
+
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", start);
+} else {
+  start();
+}
+
+// =============== START ====================
+function start() {
+  addEvents();
+}
+
+// ============= UPDATE & RERENDER ===========
+function update() {
+  addEvents();
+  updateTotal();
+}
+
+
+function addEvents() {
+  // Remove items from cart
+  let cartRemove_btns = document.querySelectorAll(".cart-remove");
+  console.log(cartRemove_btns);
+
+
+  cartRemove_btns.forEach((btn) => {
+    btn.addEventListener("click", handle_removeCartItem);
+
+  });
+
+  // Change item quantity
+  let cartQuantity_inputs = document.querySelectorAll(".cart-quantity");
+  cartQuantity_inputs.forEach((input) => {
+    input.addEventListener("change", handle_changeItemQuantity);
+  });
+
+  // Add item to cart
+  let addCart_btns = document.querySelectorAll(".add-cart");
+  addCart_btns.forEach((btn) => {
+    btn.addEventListener("click", handle_addCartItem);
+  });
+
+  // Buy Order
+  const buy_btn = document.querySelector(".btn-buy");
+  buy_btn.addEventListener("click", handle_buyOrder);
+
+}
+
+// ============= HANDLE EVENTS FUNCTIONS =============
+let itemsAdded = [];
+
+function handle_addCartItem() {
+  let product = this.parentElement;
+  let title = product.querySelector(".product-title").innerHTML;
+  let price = product.querySelector(".product-price").innerHTML;
+  let imgSrc = product.querySelector(".product-img").src;
+  console.log(title, price, imgSrc);
+
+  let newToAdd = {
+    title,
+    price,
+    imgSrc,
+  };
+
+  // handle item is already exist
+  if (itemsAdded.find((el) => el.title == newToAdd.title)) {
+    alert("Đã có mặt hàng này trong giỏ hàng của bạn!");
+    
+    return;
+  } else {
+    countCartAdd1.textContent++;
+  countCartAdd.textContent++;
+    itemsAdded.push(newToAdd);
+  }
+
+  // Add product to cart
+  let cartBoxElement = CartBoxComponent(title, price, imgSrc);
+  let newNode = document.createElement("div");
+  newNode.innerHTML = cartBoxElement;
+  const cartContent = cart.querySelector(".cart-content");
+  cartContent.appendChild(newNode);
+
+  update();
+}
+
+function handle_removeCartItem() {
+  // Decrement each count-cart-add span by 1
+  const countCartAdd1 = document.querySelector("#count-cart-add1");
+  const countCartAdd = document.querySelector("#count-cart-add");
+
+  countCartAdd1.textContent--;
+  countCartAdd.textContent--;
+
+  // Remove the cart item from the page
+  this.parentElement.remove();
+
+  // Update the cart
+  itemsAdded = itemsAdded.filter(
+    (el) =>
+      el.title != this.parentElement.querySelector(".cart-product-title")
+        .innerHTML
+  );
+
+  update();
+}
+
+function handle_changeItemQuantity() {
+  if (isNaN(this.value) || this.value < 1) {
+    this.value = 1;
+  }
+  this.value = Math.floor(this.value); // to keep it integer
+
+  update();
+}
+
+
+
+function handle_buyOrder() {
+  if (itemsAdded.length <= 0) {
+    alert("Chưa có đơn hàng nào được đặt! \nHãy tạo một đơn hàng.");
+  
+    return;
+  }
+  
+  
+  const payment=document.querySelector('.containers');
+  const cartContent = cart.querySelector(".cart-content");
+const buybutton=document.querySelector('.btn-buy');
+
+window.location.href="pay.html";
+   itemsAdded = [];
+ update();
+  }
+  const buybutton=document.querySelector('.btn-buy');
+buybutton.addEventListener("click", () => {
+ 
+ window.scrollTo(0, 750);
+});
+ 
+// =========== UPDATE & RERENDER FUNCTIONS =========
+function updateTotal() {
+  let cartBoxes = document.querySelectorAll(".cart-box");
+  const totalElement = cart.querySelector(".total-price");
+  let total = 0;
+  cartBoxes.forEach((cartBox) => {
+    let priceElement = cartBox.querySelector(".cart-price");
+    let price = parseFloat(priceElement.innerHTML.replace("vnđ", ""));
+    let quantity = cartBox.querySelector(".cart-quantity").value;
+    total += price * quantity;
+  });
+
+  // keep 2 digits after the decimal point
+  total = total.toFixed(3);
+  // or you can use also
+  // total = Math.round(total * 100) / 100;
+
+  totalElement.innerHTML = total + "vnđ";
+}
+
+// ============= HTML COMPONENTS =============
+function CartBoxComponent(title, price, imgSrc) {
+  return `
+    <div class="cart-box">
+        <img src=${imgSrc} alt="" class="cart-img">
+        <div class="detail-box">
+            <div class="cart-product-title">${title}</div>
+            <div class="cart-price">${price}</div>
+            <input type="number" value="1" class="cart-quantity">
+        </div>
+        <!-- REMOVE CART  -->
+        <i class='bx bx-trash cart-remove' id="remove-counter"></i>
+    </div>`;
+}
+
+</script>
+
+<script>
+
+const filterButtons = document.querySelectorAll("#filter-buttons button");
+
+// Function to filter cards based on filter buttons
+const filterCards = (e) => {
+    document.querySelector("#filter-buttons .on").classList.remove("on");
+    e.target.classList.add("on");
+
+}
+
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
+</script>
+
+<script>
+    
+  filterObjects("all");
+
+  function filterObjects(c){
+    
+    var x,i;
+    x = document.getElementsByClassName("pro1");
+    if(c=="all") c = "";
+    for(i=0;i<x.length;i++){
+      removeClass(x[i], "show");
+      if(x[i].className.indexOf(c) > -1) addClass(x[i], "show")
+     
+    }
+
+  }
+function addClass(element, name){
+  var i,arr1,arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for(i=0;i< arr2.length;i++){
+    if(arr1.indexOf(arr2[i]) == -1){
+      element.className += " " + arr2[i];
+ 
+    }
+  }
+
+
+}
+function removeClass(element, name){
+  var i,arr1,arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for(i=0;i<arr2.length;i++){
+    while(arr1.indexOf(arr2[i])> -1){
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+ 
+    }
+  }
+  element.className = arr1.join(" ");
+
+
+}
+
+
+
+</script>
+
+<script>
+  const back1=document.getElementById('btnfil');
+  const back2=document.getElementById('backnormal');
+ 
+  back1.addEventListener('click',()=>{
+   limit=25;
+    thisPage=1
+    loadItem();
+  });
+  back2.addEventListener('click',()=>{
+   limit=12;
+    thisPage=1
+    loadItem();
+  });
+
+
+
+back2.addEventListener("click", () => {
+  document.getElementById('filterselect').value = "Default";
+});
+
+
+</script>
+
+<script>
+  let subMenu = document.getElementById("subMenu");
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+    </script>
+<script>
+ const countCartAdd1 = document.getElementById("count-cart-add1");
+countCartAdd1.textContent = 0;
+const countCartAdd = document.getElementById("count-cart-add");
+countCartAdd.textContent = 0;
+
+// Thêm sự kiện click vào icon "+"
+const cartadds = document.querySelectorAll("#cart-plus");
+cartadds.forEach((cartadd)=> {
+  let isClicked = false;
+  cartadd.addEventListener("click", (event) => {
+    if (!isClicked) {
+      isClicked = true;
+    
+    }
+  });
+});
+  
+  </script>
+
+
+  
+
+
